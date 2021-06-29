@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src/",
+      "declaration": true,
+      "declarationDir": "build",
+      "target": "esnext",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": false,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "noEmit": false,
+      "jsx": "preserve",
+    },
+    "include": [
+      "src",
+      "./src/custom.d.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "build",
+      "**/*.stories.tsx"
+    ]
+  }
+  

@@ -1,0 +1,21 @@
+{
+  "name": "@es/esbuild-svgr-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fschwalm/esbuild-svgr-issue.git",
+  "author": "fschwalm <fagnerschwalm@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "clean": "sh cleanup.sh",
+    "start:app": "lerna run --scope @es/simple-next-app dev",
+    "start:with-bundle": "lerna run --scope @es/ds-icons build:bundle && yarn start:app",
+    "start:without-bundle": "lerna run --scope @es/ds-icons build:no-bundle && yarn start:app"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
